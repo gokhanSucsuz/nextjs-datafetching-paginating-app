@@ -34,7 +34,7 @@ const List = async ({ offset }) => {
                     <h1 className="text-2xl text-white border p-1 rounded-lg ">Total : {data.count}</h1>
                     <h1 className="text-2xl text-white border p-1 rounded-lg ">Now Listed : {LIMIT}</h1>
                     <h1 className="text-2xl text-white border p-1 rounded-lg ">Total Page : {Math.round(data.count / LIMIT)}</h1>
-                    <h1 className="text-2xl text-white border p-1 rounded-lg ">The page you are on : {offset / LIMIT || 1}</h1>
+                    <h1 className="text-2xl text-white border p-1 rounded-lg ">The page you are on : {(offset / LIMIT)   + 1 || 1}</h1>
                 </div>
 
                 <div className="flex flex-1 items-center justify-end  gap-3 text-white">
